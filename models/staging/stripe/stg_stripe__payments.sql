@@ -4,4 +4,4 @@ order_id,
 payment_method,
 amount
 
-from dbt_sellingson_jaffle_shop.raw_payments
+from {{ source('stripe', 'raw_payments') }}

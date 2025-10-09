@@ -1,11 +1,13 @@
 sources:
   - name: jaffle_shop
-    database: dbt_sellingson_jaffle_shop  
-    schema: jaffle_shop  
+    database: jaffle-shop-474413  
+    schema: dbt_sellingson_jaffle_shop  
     tables:
       - name: orders
       - name: customers
 
   - name: stripe
+    database: jaffle-shop-474413  
+    schema: dbt_sellingson_jaffle_shop  
     tables:
       - name: raw_payments
