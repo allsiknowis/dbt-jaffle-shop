@@ -4,4 +4,4 @@ order_id,
 payment_method,
 amount
 
-from {{ source('stripe', 'raw_payments') }}
+from {{ source('stripe', 'payments') }}
