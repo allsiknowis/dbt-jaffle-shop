@@ -15,10 +15,3 @@ sources:
       - name: orders
       - name: customers
         freshness: null
-        
-
-  - name: stripe
-    database: jaffle-shop-474413  
-    schema: dbt_sellingson_jaffle_shop  
-    tables:
-      - name: raw_payments
