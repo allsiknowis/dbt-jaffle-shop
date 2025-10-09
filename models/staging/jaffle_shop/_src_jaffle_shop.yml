@@ -2,9 +2,20 @@ sources:
   - name: jaffle_shop
     database: jaffle-shop-474413  
     schema: dbt_sellingson_jaffle_shop  
+    config:
+          freshness:
+            warn_after:
+              count: 12
+              period: hour
+            error_after:
+              count: 1
+              period: day
+          loaded_at_field: _etl_loaded_at  
     tables:
       - name: orders
       - name: customers
+        freshness: null
+        
 
   - name: stripe
     database: jaffle-shop-474413  
