@@ -1,0 +1,11 @@
+sources:
+  - name: jaffle_shop
+    database: dbt_sellingson_jaffle_shop  
+    schema: jaffle_shop  
+    tables:
+      - name: orders
+      - name: customers
+
+  - name: stripe
+    tables:
+      - name: raw_payments
