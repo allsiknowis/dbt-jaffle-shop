@@ -1,0 +1,16 @@
+models:
+- name: stg_stripe__payments
+  description: This model extracts and transforms payment data from the Stripe source,
+    providing a structured view of payment transactions. It includes details such
+    as payment ID, order ID, payment method, and amount, which are essential for financial
+    analysis and reporting.
+  columns:
+  - name: payment_id
+    description: A unique identifier for each payment transaction.
+  - name: order_id
+    description: The identifier for the order associated with the payment.
+  - name: payment_method
+    description: The method used to process the payment, such as credit card or bank
+      transfer.
+  - name: amount
+    description: The total amount of the payment transaction.
